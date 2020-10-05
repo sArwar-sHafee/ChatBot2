@@ -7,3 +7,5 @@ pygame (any)
 nltk (any)
 
 To get the exe file visit :  https://drive.google.com/drive/folders/1vz10Yy_zqjzW9tYzaZZAeChO6Wxwtbx0?usp=sharing 
+
+After adding voice new exe file was not made actually. That link provides a bot can only caht. Not talk. 
