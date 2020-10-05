@@ -1,6 +1,6 @@
 {"intents": [
         {"tag": "greeting",
-         "patterns": ["Hi", "Is anyone there?", "Hello", "Good day", "Whats up", "what's up", "Hay", "hello Tito", "Tito", "Nice to see you", "Good to see you", "Hi nice to see u"],
+         "patterns": ["Hi", "Hello", "Good day", "Whats up", "what's up", "Hay", "hello Tito", "Tito", "Nice to see you", "Good to see you", "Hi nice to see u"],
          "responses": ["Hi there :)", "Hello!", "Hello there!!!", "Hi, Nice to see you!"],
          "context_set": ""
         },
@@ -10,17 +10,17 @@
          "context_set": ""
         },
         {"tag": "gossip",
-         "patterns": ["Hi How are you", "Hi tito how are u?", "How are you", "how r u?", "How r you", "How is your day?", "How are you going?", "Are you fine?", "Are you ok?"],
+         "patterns": ["Hi How are you", "Hi tito how are u?", "How are you", "how r u?", "How r you", "How is your day?", "How are you going?", "Are you fine?", "Are you ok?", "How are you feeling right now", "How do you feel", "how u feel right now", "what is your feeling"],
          "responses": [ "fine, thanks. And you?", "I am well and what's about u?",  "Fine. Thank you :)"],
          "context_set": ""
         },
         {"tag": "ask",
-         "patterns": ["Can you sing?", "Can you eat?", "can u play?", "Do you eat", "Do you sleep?", "Lets dance", "sing", "sing a song", "Sing me a song", "Tell me a jokes", "Can you help me somehow", "Can you teach me English?", "Can you teach?","Can you tell me the time", "Can you tell me what time is it now?"],
+         "patterns": ["Can you sing?", "Can you eat?", "can u play?", "Do you eat", "Do you sleep?", "Lets dance", "Tell me a jokes", "Can you help me somehow", "Can you teach me English?", "Can you teach?","Can you tell me the time", "Can you tell me what time is it now?"],
          "responses": ["Sorry I can't do that. I was not programmed in that way", "I am sorry, actually right now I am not able to do that"],
          "context_set": ""
         },
         {"tag": "Work",
-         "patterns": ["What are u doing", "What r you doing right now?", "Do you have a job", "What do you do all day?", "Are u doing any work right now?", "r u doing any job right now?"],
+         "patterns": ["what you doing", "what do you do", "Do you have a job", "What are you doing", "What r you doing right now?", "Do you have a job", "What do you do all day?", "Are u doing any work right now?", "r u doing any job right now?"],
          "responses": [ "My only job is to talk to you and make you happy."],
          "context_set": ""
         },
@@ -60,7 +60,7 @@
          "context_set": ""
         },
         {"tag": "affection",
-         "patterns": ["Do you love someone?", "Whom do you love", "do u like someone?", "did you love anyone", "Can you love", "DO you love?"],
+         "patterns": ["Do you love someone?", "Whom do you love", "do u like someone?", "did you love anyone", "Can you love", "Do you love?"],
          "responses": ["I did not love anyone before.","May be I didn't fall in love before :)"],
          "context_set": ""
         },
@@ -91,7 +91,12 @@
         },
         {"tag": "Happy",
          "patterns": ["Are you happy?", "Are you smilling", "happy now?", "Laughing?", "You are happy"],
-         "responses": ["I am happy.", "Happy"],
+         "responses": ["Yeas, :)", "You made me happy"],
+         "context_set": "" 
+        },
+        {"tag": "question",
+         "patterns": ["why?", "why", "when", "where"],
+         "responses": ["Honestly, I don't know", "I have no idea"],
          "context_set": "" 
         },
         {"tag": "Sorrow",
@@ -105,13 +110,23 @@
          "context_set": "" 
         },
         {"tag": "Game",
-         "patterns": ["What is your fevourite game?", "Do you like games?", "Do you like to play?", "Do u like to play games?", "Do you play games?", "Do you play"],
-         "responses": ["Chess is my fevourite game. But I can not play right now."],
+         "patterns": ["what is your favourite game?", "Do you like games?", "Do you like to play?", "Do u like to play games?", "Do you play games?", "Do you play", "do you love to play games?", "any favourite game?", "What is your most favourite game"],
+         "responses": ["Chess is my favourite game. But I can not play right now."],
+         "context_set": "" 
+        },
+        {"tag": "Song",
+         "patterns": ["I want to listen a song", "I wanna hear a song",  "sing", "sing a song", "Sing me a song"],
+         "responses": ["Ok. I'm playing my favourite band Imagine dragons song covered by j fla."],
+         "context_set": "" 
+        },
+        {"tag": "StopSong",
+         "patterns": ["stop singing", "stop",  "Ok, stop your song"],
+         "responses": ["stopping"],
          "context_set": "" 
         },
         {"tag": "Shafee",
          "patterns": ["Hi, Shafee", "shafee", "Is your name Shafee?", "Are you shafee?"],
-         "responses": ["Say tito. Not Shafee"],
+         "responses": ["Say tito."],
          "context_set": "" 
         }
    ]
