@@ -84,7 +84,7 @@ import nltk
 #from math import *
 
 from nltk.stem.lancaster import LancasterStemmer
-stemmer = LancasterStemmer()
+stemmer = LancasterStemmer() #makes word like running to run. Means take the root of the work 
 
 import numpy
 import json
