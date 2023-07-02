@@ -123,7 +123,7 @@ except:
 
     out_empty = [0 for _ in range(len(labels))]
 
-    for x, doc in enumerate(docs_x):
+    for x, doc in enumerate(docs_x): # x is index number and doc is the item
         bag = []
 
         wrds = [stemmer.stem(w.lower()) for w in doc]
