@@ -99,10 +99,10 @@ try:
     with open("data.pickle", "rb") as f:
         words, labels, training, output = pickle.load(f)
 except:
-    words = []
-    labels = []
-    docs_x = []
-    docs_y = []
+    words = []  #pattern, stemmed lowercase unique serial list,
+    labels = [] #tag, serial 
+    docs_x = [] #pattern
+    docs_y = [] #tag
 
     for intent in data["intents"]:
         for pattern in intent["patterns"]:
@@ -124,13 +124,13 @@ except:
     out_empty = [0 for _ in range(len(labels))]
 
     for x, doc in enumerate(docs_x): # x is index number and doc is the item
-        bag = []
+        bag = [] # 0 or ! depending on uncommon and common between words and wrds
 
-        wrds = [stemmer.stem(w.lower()) for w in doc]
+        wrds = [stemmer.stem(w.lower()) for w in doc] #single word from pattern to lowercase stemmed.  
 
         for w in words:
             if w in wrds:
-                bag.append(1)
+                bag.append(1) #if words and wrds have common word
             else:
                 bag.append(0)
 
